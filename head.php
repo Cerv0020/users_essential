@@ -14,4 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <script type="text/javascript" src="app.js" async defer></script>
 </head>
