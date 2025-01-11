@@ -1,8 +1,10 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
+const apiKey = process.env.REACT_APP_API_KEY;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBSL4MlKQH9jexMl-uGoh-a5m3m_MmkTY8",
+  apiKey: apiKey,
   authDomain: "user-essentials.firebaseapp.com",
   projectId: "user-essentials",
   storageBucket: "user-essentials.firebasestorage.app",
