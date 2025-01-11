@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import Table from './components/Table/Table'
+import UserTable from './components/UserTable/UserTable'
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Table />
+      <UserTable />
     </div>
   )
 }

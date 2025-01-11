@@ -1,10 +1,9 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
-
-const apiKey = process.env.REACT_APP_API_KEY;
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: apiKey,
+  apiKey: import.meta.env.VITE_REACT_APP_API_KEY,
   authDomain: "user-essentials.firebaseapp.com",
   projectId: "user-essentials",
   storageBucket: "user-essentials.firebasestorage.app",
@@ -12,7 +11,7 @@ const firebaseConfig = {
   appId: "1:913236048141:web:553a4c08d51551c880d844",
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
+const App = initializeApp(firebaseConfig);
 
-export { db };
+export const auth = getAuth(App);
+export const db = getFirestore(App);
